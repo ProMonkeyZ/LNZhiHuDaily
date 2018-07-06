@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D25D8A64AFEABCDAD3C1FB9 /* libPods-LNZhiHuDailyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 409305426581367D108271EF /* libPods-LNZhiHuDailyUITests.a */; };
-		4C653A0F20EF131700BDC52C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A0E20EF131700BDC52C /* AppDelegate.m */; };
-		4C653A1220EF131700BDC52C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A1120EF131700BDC52C /* ViewController.m */; };
-		4C653A1520EF131700BDC52C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C653A1320EF131700BDC52C /* Main.storyboard */; };
+		1B1874FDEA4E4AC5A0674FC8 /* Pods_LNZhiHuDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D770593DBC8C8FA434FBAB7 /* Pods_LNZhiHuDaily.framework */; };
 		4C653A1720EF131900BDC52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C653A1620EF131900BDC52C /* Assets.xcassets */; };
-		4C653A1A20EF131900BDC52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C653A1820EF131900BDC52C /* LaunchScreen.storyboard */; };
 		4C653A1D20EF131900BDC52C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A1C20EF131900BDC52C /* main.m */; };
 		4C653A2720EF131A00BDC52C /* LNZhiHuDailyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A2620EF131A00BDC52C /* LNZhiHuDailyUITests.m */; };
-		AFA7A95C9B2D3EED249CBEB9 /* libPods-LNZhiHuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 232F43B0470407E36AC23427 /* libPods-LNZhiHuDaily.a */; };
+		4C653A3520EF1C8200BDC52C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A3420EF1C8100BDC52C /* AppDelegate.m */; };
+		4C653A3920EF1CB800BDC52C /* LNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A3820EF1CB800BDC52C /* LNBaseViewController.m */; };
+		4C653A3C20EF1CD200BDC52C /* LNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A3B20EF1CD200BDC52C /* LNMainViewController.m */; };
+		4C653A3E20EF1DDE00BDC52C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C653A3D20EF1DDE00BDC52C /* Launch Screen.storyboard */; };
+		B55AE24CC7AFA65D7829694D /* Pods_LNZhiHuDailyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23308A314D9324CC18FA274D /* Pods_LNZhiHuDailyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,22 +29,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		232F43B0470407E36AC23427 /* libPods-LNZhiHuDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LNZhiHuDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23308A314D9324CC18FA274D /* Pods_LNZhiHuDailyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNZhiHuDailyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B810A4FE573AC45A631A64 /* Pods-LNZhiHuDailyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDailyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDailyUITests/Pods-LNZhiHuDailyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		409305426581367D108271EF /* libPods-LNZhiHuDailyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LNZhiHuDailyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C653A0A20EF131700BDC52C /* LNZhiHuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNZhiHuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C653A0D20EF131700BDC52C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4C653A0E20EF131700BDC52C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C653A1020EF131700BDC52C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C653A1120EF131700BDC52C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4C653A1420EF131700BDC52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C653A1620EF131900BDC52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C653A1920EF131900BDC52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C653A1B20EF131900BDC52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C653A1C20EF131900BDC52C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C653A2220EF131A00BDC52C /* LNZhiHuDailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LNZhiHuDailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C653A2620EF131A00BDC52C /* LNZhiHuDailyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNZhiHuDailyUITests.m; sourceTree = "<group>"; };
 		4C653A2820EF131A00BDC52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C653A3320EF1C8100BDC52C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C653A3420EF1C8100BDC52C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C653A3720EF1CB800BDC52C /* LNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseViewController.h; sourceTree = "<group>"; };
+		4C653A3820EF1CB800BDC52C /* LNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewController.m; sourceTree = "<group>"; };
+		4C653A3A20EF1CD200BDC52C /* LNMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNMainViewController.h; sourceTree = "<group>"; };
+		4C653A3B20EF1CD200BDC52C /* LNMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNMainViewController.m; sourceTree = "<group>"; };
+		4C653A3D20EF1DDE00BDC52C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		6D770593DBC8C8FA434FBAB7 /* Pods_LNZhiHuDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNZhiHuDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C77F9A4AFE8AA57DD1BC8C7 /* Pods-LNZhiHuDailyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDailyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDailyUITests/Pods-LNZhiHuDailyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8985A6A8E4DCAE78723321 /* Pods-LNZhiHuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDaily/Pods-LNZhiHuDaily.debug.xcconfig"; sourceTree = "<group>"; };
 		AADDE462E1726F04F86C89AF /* Pods-LNZhiHuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDaily/Pods-LNZhiHuDaily.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA7A95C9B2D3EED249CBEB9 /* libPods-LNZhiHuDaily.a in Frameworks */,
+				1B1874FDEA4E4AC5A0674FC8 /* Pods_LNZhiHuDaily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D25D8A64AFEABCDAD3C1FB9 /* libPods-LNZhiHuDailyUITests.a in Frameworks */,
+				B55AE24CC7AFA65D7829694D /* Pods_LNZhiHuDailyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,13 +105,9 @@
 		4C653A0C20EF131700BDC52C /* LNZhiHuDaily */ = {
 			isa = PBXGroup;
 			children = (
-				4C653A0D20EF131700BDC52C /* AppDelegate.h */,
-				4C653A0E20EF131700BDC52C /* AppDelegate.m */,
-				4C653A1020EF131700BDC52C /* ViewController.h */,
-				4C653A1120EF131700BDC52C /* ViewController.m */,
-				4C653A1320EF131700BDC52C /* Main.storyboard */,
+				4C653A3620EF1C9400BDC52C /* BaseClass */,
+				4C653A3220EF1C8100BDC52C /* Enter */,
 				4C653A1620EF131900BDC52C /* Assets.xcassets */,
-				4C653A1820EF131900BDC52C /* LaunchScreen.storyboard */,
 				4C653A1B20EF131900BDC52C /* Info.plist */,
 				4C653A1C20EF131900BDC52C /* main.m */,
 			);
@@ -126,11 +123,32 @@
 			path = LNZhiHuDailyUITests;
 			sourceTree = "<group>";
 		};
+		4C653A3220EF1C8100BDC52C /* Enter */ = {
+			isa = PBXGroup;
+			children = (
+				4C653A3320EF1C8100BDC52C /* AppDelegate.h */,
+				4C653A3420EF1C8100BDC52C /* AppDelegate.m */,
+				4C653A3A20EF1CD200BDC52C /* LNMainViewController.h */,
+				4C653A3B20EF1CD200BDC52C /* LNMainViewController.m */,
+				4C653A3D20EF1DDE00BDC52C /* Launch Screen.storyboard */,
+			);
+			path = Enter;
+			sourceTree = "<group>";
+		};
+		4C653A3620EF1C9400BDC52C /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				4C653A3720EF1CB800BDC52C /* LNBaseViewController.h */,
+				4C653A3820EF1CB800BDC52C /* LNBaseViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
 		C99EFC27B72DE14A27FFE100 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				232F43B0470407E36AC23427 /* libPods-LNZhiHuDaily.a */,
-				409305426581367D108271EF /* libPods-LNZhiHuDailyUITests.a */,
+				6D770593DBC8C8FA434FBAB7 /* Pods_LNZhiHuDaily.framework */,
+				23308A314D9324CC18FA274D /* Pods_LNZhiHuDailyUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,6 +164,7 @@
 				4C653A0620EF131700BDC52C /* Sources */,
 				4C653A0720EF131700BDC52C /* Frameworks */,
 				4C653A0820EF131700BDC52C /* Resources */,
+				18FEB7C2F591688A17A385EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +200,7 @@
 		4C653A0220EF131700BDC52C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LN;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ZLN;
 				TargetAttributes = {
@@ -217,9 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C653A1A20EF131900BDC52C /* LaunchScreen.storyboard in Resources */,
+				4C653A3E20EF1DDE00BDC52C /* Launch Screen.storyboard in Resources */,
 				4C653A1720EF131900BDC52C /* Assets.xcassets in Resources */,
-				4C653A1520EF131700BDC52C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +252,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18FEB7C2F591688A17A385EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LNZhiHuDaily/Pods-LNZhiHuDaily-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNZhiHuDaily/Pods-LNZhiHuDaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B636345E5716269342A6B2B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,9 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C653A1220EF131700BDC52C /* ViewController.m in Sources */,
+				4C653A3520EF1C8200BDC52C /* AppDelegate.m in Sources */,
+				4C653A3920EF1CB800BDC52C /* LNBaseViewController.m in Sources */,
 				4C653A1D20EF131900BDC52C /* main.m in Sources */,
-				4C653A0F20EF131700BDC52C /* AppDelegate.m in Sources */,
+				4C653A3C20EF1CD200BDC52C /* LNMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,25 +341,6 @@
 			targetProxy = 4C653A2320EF131A00BDC52C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4C653A1320EF131700BDC52C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C653A1420EF131700BDC52C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4C653A1820EF131900BDC52C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C653A1920EF131900BDC52C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4C653A2920EF131A00BDC52C /* Debug */ = {
