@@ -15,6 +15,9 @@
 		4C653A3920EF1CB800BDC52C /* LNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A3820EF1CB800BDC52C /* LNBaseViewController.m */; };
 		4C653A3C20EF1CD200BDC52C /* LNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A3B20EF1CD200BDC52C /* LNMainViewController.m */; };
 		4C653A3E20EF1DDE00BDC52C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C653A3D20EF1DDE00BDC52C /* Launch Screen.storyboard */; };
+		4C653A4220EF3A2800BDC52C /* UIColor+LNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A4120EF3A2800BDC52C /* UIColor+LNExtension.m */; };
+		4C653A4820EF3B9600BDC52C /* LNMainNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A4720EF3B9600BDC52C /* LNMainNavigationBar.m */; };
+		4C653A4B20EF492E00BDC52C /* UIView+LNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A4A20EF492E00BDC52C /* UIView+LNExtension.m */; };
 		B55AE24CC7AFA65D7829694D /* Pods_LNZhiHuDailyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23308A314D9324CC18FA274D /* Pods_LNZhiHuDailyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,13 @@
 		4C653A3A20EF1CD200BDC52C /* LNMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNMainViewController.h; sourceTree = "<group>"; };
 		4C653A3B20EF1CD200BDC52C /* LNMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNMainViewController.m; sourceTree = "<group>"; };
 		4C653A3D20EF1DDE00BDC52C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4C653A4020EF3A2800BDC52C /* UIColor+LNExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LNExtension.h"; sourceTree = "<group>"; };
+		4C653A4120EF3A2800BDC52C /* UIColor+LNExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LNExtension.m"; sourceTree = "<group>"; };
+		4C653A4620EF3B9600BDC52C /* LNMainNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNMainNavigationBar.h; sourceTree = "<group>"; };
+		4C653A4720EF3B9600BDC52C /* LNMainNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNMainNavigationBar.m; sourceTree = "<group>"; };
+		4C653A4920EF492E00BDC52C /* UIView+LNExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LNExtension.h"; sourceTree = "<group>"; };
+		4C653A4A20EF492E00BDC52C /* UIView+LNExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LNExtension.m"; sourceTree = "<group>"; };
+		4C653A4D20EF4D4F00BDC52C /* UIHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIHeader.h; sourceTree = "<group>"; };
 		6D770593DBC8C8FA434FBAB7 /* Pods_LNZhiHuDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNZhiHuDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C77F9A4AFE8AA57DD1BC8C7 /* Pods-LNZhiHuDailyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDailyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDailyUITests/Pods-LNZhiHuDailyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8985A6A8E4DCAE78723321 /* Pods-LNZhiHuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDaily/Pods-LNZhiHuDaily.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +115,8 @@
 		4C653A0C20EF131700BDC52C /* LNZhiHuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				4C653A4C20EF4D3E00BDC52C /* Header */,
+				4C653A3F20EF39C300BDC52C /* Lib */,
 				4C653A3620EF1C9400BDC52C /* BaseClass */,
 				4C653A3220EF1C8100BDC52C /* Enter */,
 				4C653A1620EF131900BDC52C /* Assets.xcassets */,
@@ -126,11 +138,9 @@
 		4C653A3220EF1C8100BDC52C /* Enter */ = {
 			isa = PBXGroup;
 			children = (
-				4C653A3320EF1C8100BDC52C /* AppDelegate.h */,
-				4C653A3420EF1C8100BDC52C /* AppDelegate.m */,
-				4C653A3A20EF1CD200BDC52C /* LNMainViewController.h */,
-				4C653A3B20EF1CD200BDC52C /* LNMainViewController.m */,
-				4C653A3D20EF1DDE00BDC52C /* Launch Screen.storyboard */,
+				4C653A4520EF3B7300BDC52C /* AppDelegate */,
+				4C653A4420EF3B6400BDC52C /* View */,
+				4C653A4320EF3B5500BDC52C /* VewController */,
 			);
 			path = Enter;
 			sourceTree = "<group>";
@@ -142,6 +152,53 @@
 				4C653A3820EF1CB800BDC52C /* LNBaseViewController.m */,
 			);
 			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		4C653A3F20EF39C300BDC52C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				4C653A4020EF3A2800BDC52C /* UIColor+LNExtension.h */,
+				4C653A4120EF3A2800BDC52C /* UIColor+LNExtension.m */,
+				4C653A4920EF492E00BDC52C /* UIView+LNExtension.h */,
+				4C653A4A20EF492E00BDC52C /* UIView+LNExtension.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		4C653A4320EF3B5500BDC52C /* VewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C653A3A20EF1CD200BDC52C /* LNMainViewController.h */,
+				4C653A3B20EF1CD200BDC52C /* LNMainViewController.m */,
+				4C653A3D20EF1DDE00BDC52C /* Launch Screen.storyboard */,
+			);
+			path = VewController;
+			sourceTree = "<group>";
+		};
+		4C653A4420EF3B6400BDC52C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C653A4620EF3B9600BDC52C /* LNMainNavigationBar.h */,
+				4C653A4720EF3B9600BDC52C /* LNMainNavigationBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C653A4520EF3B7300BDC52C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4C653A3320EF1C8100BDC52C /* AppDelegate.h */,
+				4C653A3420EF1C8100BDC52C /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4C653A4C20EF4D3E00BDC52C /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				4C653A4D20EF4D4F00BDC52C /* UIHeader.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		C99EFC27B72DE14A27FFE100 /* Frameworks */ = {
@@ -319,8 +376,11 @@
 			files = (
 				4C653A3520EF1C8200BDC52C /* AppDelegate.m in Sources */,
 				4C653A3920EF1CB800BDC52C /* LNBaseViewController.m in Sources */,
+				4C653A4820EF3B9600BDC52C /* LNMainNavigationBar.m in Sources */,
+				4C653A4220EF3A2800BDC52C /* UIColor+LNExtension.m in Sources */,
 				4C653A1D20EF131900BDC52C /* main.m in Sources */,
 				4C653A3C20EF1CD200BDC52C /* LNMainViewController.m in Sources */,
+				4C653A4B20EF492E00BDC52C /* UIView+LNExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

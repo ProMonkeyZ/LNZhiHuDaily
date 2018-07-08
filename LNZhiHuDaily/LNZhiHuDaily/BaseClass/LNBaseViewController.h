@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIHeader.h"
 
 @interface LNBaseViewController : UIViewController
 
