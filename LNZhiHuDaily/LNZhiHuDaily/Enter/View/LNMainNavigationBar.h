@@ -10,6 +10,12 @@
 
 @interface LNMainNavigationBar : UIView
 
++ (CGFloat)getScaleWithStart:(CGFloat)startValue
+                      andEnd:(CGFloat)endValue
+                    andRatio:(CGFloat)ratio;
+
+@property(nonatomic, copy) NSString *title;
+@property(nonatomic, strong) UIColor *ln_backgroundColor;
 @property(nonatomic, strong) UIButton *leftButton;
 @property(nonatomic, strong) UIButton *rightButton;
 

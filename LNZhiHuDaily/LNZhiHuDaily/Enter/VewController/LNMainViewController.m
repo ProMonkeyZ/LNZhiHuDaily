@@ -7,12 +7,19 @@
 //
 
 #import "LNMainViewController.h"
-#import "LNMainNavigationBar.h"
+#import "LNMainViewModel.h"
+#import "LNMainTableViewCell.h"
+#import "LNMaintableSectionHeaderView.h"
+#import "UIImageView+WebCache.h"
+#import "LNDetailViewModel.h"
+#import "LNStoryDetailViewController.h"
 
 @interface LNMainViewController () <UITableViewDelegate, UITableViewDataSource>
 
+@property(nonatomic, strong) LNMainViewModel *viewModel;
 @property(nonatomic, strong) UITableView *tableView;
-@property(nonatomic, strong) LNMainNavigationBar *navigationBar;
+@property(nonatomic, strong) MJRefreshNormalHeader *refreshHeader;
+@property(nonatomic, strong) MJRefreshAutoNormalFooter *refreshFooter;
 
 @end
 
@@ -21,52 +28,109 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self addViews];
+    [self bindSignal];
+    
+    [self getData];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)addViews {
+    [super addViews];
+    self.title = @"日报";
     [self.view addSubview:self.tableView];
-    [self.view addSubview:self.navigationBar];
 }
 
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
+- (void)addViewConstraints {
+    [super addViewConstraints];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
+}
+
+- (void)bindSignal {
+    @weakify(self);
+    [self.viewModel.updatedContentSignal subscribeNext:^(RACTuple *dataTuple) {
+        @strongify(self);
+        [self.refreshHeader endRefreshing];
+        if ([self.refreshFooter isRefreshing]) {
+            [self.refreshFooter endRefreshing];
+        }
+        [self.tableView reloadData];
+    }];
     
-    CGFloat naviY = [UIApplication sharedApplication].statusBarFrame.size.height;
-    CGFloat naviH = naviY + 44.f;
-    self.navigationBar.frame = CGRectMake(0, naviY, self.view.width, naviH);
-    
-    self.tableView.frame = self.view.bounds;
+    [self.viewModel.errorSignal subscribeNext:^(id x) {
+        
+    }];
+}
+
+- (void)getData {
+    [self.viewModel getData];
 }
 
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 44.f;
+    return [LNMainTableViewCell cellHeight];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 46.f;
 }
 
 #pragma mark - UITableViewDataSource
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [self.viewModel numberOfSections];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 30;
+    return [self.viewModel numberOfRowsInSection:section];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    static NSString *reuseId = @"LNMaintableSectionHeaderViewReuseId";
+    LNMaintableSectionHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:reuseId];
+    if (!headerView) {
+        headerView = [[LNMaintableSectionHeaderView alloc] initWithReuseIdentifier:reuseId];
+    }
+    return headerView;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    LNMaintableSectionHeaderView *headerView = (LNMaintableSectionHeaderView *)view;
+    headerView.label.text = [self.viewModel titleAtSection:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *reuseId = @"UITableViewCellReuseId";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
+    static NSString *reuseId = @"LNMainTableViewCellReuseId";
+    LNMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseId];
+        cell = [[LNMainTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseId];
     }
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [((LNMainTableViewCell *)cell).iconImageView sd_setImageWithURL:[NSURL URLWithString:[self.viewModel imageUrlAtIndexpath:indexPath]]];
+    ((LNMainTableViewCell *)cell).titleLabel.attributedText = [self.viewModel titleAtIndexpath:indexPath];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    LNStoryDetailViewController *vc = [LNStoryDetailViewController new];
+    vc.viewModel = [self.viewModel fetchDetailViewModelAtIndexPath:indexPath];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - getter
 
-- (LNMainNavigationBar *)navigationBar {
-    if (!_navigationBar) {
-        _navigationBar = [LNMainNavigationBar new];
+- (LNMainViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [LNMainViewModel new];
     }
-    return _navigationBar;
+    return _viewModel;
 }
 
 - (UITableView *)tableView {
@@ -74,8 +138,33 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+        _tableView.mj_header = self.refreshHeader;
+        _tableView.mj_footer = self.refreshFooter;
     }
     return _tableView;
+}
+
+- (MJRefreshNormalHeader *)refreshHeader {
+    if (!_refreshHeader) {
+        @weakify(self);
+        _refreshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            @strongify(self);
+            [self.viewModel getData];
+        }];
+    }
+    return _refreshHeader;
+}
+
+- (MJRefreshAutoNormalFooter *)refreshFooter {
+    if (!_refreshFooter) {
+        @weakify(self);
+        _refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            @strongify(self);
+            [self.viewModel footerRefresh];
+        }];
+    }
+    return _refreshFooter;
 }
 
 @end

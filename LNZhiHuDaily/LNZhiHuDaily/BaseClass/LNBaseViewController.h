@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "UIHeader.h"
+#import "UTilsHeader.h"
 
 @interface LNBaseViewController : UIViewController
+
+- (void)addViews;
+
+- (void)addViewConstraints;
 
 @end

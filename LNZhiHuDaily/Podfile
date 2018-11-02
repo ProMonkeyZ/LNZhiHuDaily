@@ -9,7 +9,11 @@ target 'LNZhiHuDaily' do
   pod 'AFNetworking'
   pod 'Masonry'
   pod 'SDWebImage'
-  
+  pod 'AFNetworking-RACExtensions'
+  pod 'MJExtension'
+  pod 'MJRefresh'
+  pod 'FDFullscreenPopGesture'
+
   target 'LNZhiHuDailyUITests' do
     inherit! :search_paths
     # Pods for testing

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B1874FDEA4E4AC5A0674FC8 /* Pods_LNZhiHuDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D770593DBC8C8FA434FBAB7 /* Pods_LNZhiHuDaily.framework */; };
+		4C13D92A2176DB8F001FEE00 /* LNTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C13D9292176DB8F001FEE00 /* LNTools.m */; };
+		4C13D92D2176E13F001FEE00 /* LNMaintableSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C13D92C2176E13F001FEE00 /* LNMaintableSectionHeaderView.m */; };
 		4C653A1720EF131900BDC52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C653A1620EF131900BDC52C /* Assets.xcassets */; };
 		4C653A1D20EF131900BDC52C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A1C20EF131900BDC52C /* main.m */; };
 		4C653A2720EF131A00BDC52C /* LNZhiHuDailyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A2620EF131A00BDC52C /* LNZhiHuDailyUITests.m */; };
@@ -18,6 +20,17 @@
 		4C653A4220EF3A2800BDC52C /* UIColor+LNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A4120EF3A2800BDC52C /* UIColor+LNExtension.m */; };
 		4C653A4820EF3B9600BDC52C /* LNMainNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A4720EF3B9600BDC52C /* LNMainNavigationBar.m */; };
 		4C653A4B20EF492E00BDC52C /* UIView+LNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C653A4A20EF492E00BDC52C /* UIView+LNExtension.m */; };
+		4CA0EF4F216B47660064DF17 /* LNNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EF4E216B47660064DF17 /* LNNetworking.m */; };
+		4CA0EF56216B4FEF0064DF17 /* RVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EF55216B4FEF0064DF17 /* RVMViewModel.m */; };
+		4CA0EF59216B50350064DF17 /* LNBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EF58216B50350064DF17 /* LNBaseViewModel.m */; };
+		4CA0EF5C216B50B30064DF17 /* LNMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EF5B216B50B30064DF17 /* LNMainViewModel.m */; };
+		4CA0EF5F216B569B0064DF17 /* LNBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EF5E216B569B0064DF17 /* LNBaseModel.m */; };
+		4CA0EF63216B56AF0064DF17 /* LNStoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EF62216B56AF0064DF17 /* LNStoryModel.m */; };
+		4CC3A8DC216C4E8700FB9545 /* LNMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3A8DB216C4E8700FB9545 /* LNMainTableViewCell.m */; };
+		4CFC0FDB2179BA2300FB0172 /* LNStoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC0FDA2179BA2300FB0172 /* LNStoryDetailViewController.m */; };
+		4CFC0FDE2179BC4C00FB0172 /* LNDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC0FDD2179BC4C00FB0172 /* LNDetailViewModel.m */; };
+		4CFC0FE22179C60A00FB0172 /* LNStoryDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC0FE12179C60A00FB0172 /* LNStoryDetailModel.m */; };
+		4CFC1B86216D8D3D009AE20B /* LNLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC1B85216D8D3D009AE20B /* LNLoopView.m */; };
 		B55AE24CC7AFA65D7829694D /* Pods_LNZhiHuDailyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23308A314D9324CC18FA274D /* Pods_LNZhiHuDailyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +47,10 @@
 /* Begin PBXFileReference section */
 		23308A314D9324CC18FA274D /* Pods_LNZhiHuDailyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNZhiHuDailyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B810A4FE573AC45A631A64 /* Pods-LNZhiHuDailyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDailyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDailyUITests/Pods-LNZhiHuDailyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C13D9282176DB8F001FEE00 /* LNTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNTools.h; sourceTree = "<group>"; };
+		4C13D9292176DB8F001FEE00 /* LNTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNTools.m; sourceTree = "<group>"; };
+		4C13D92B2176E13F001FEE00 /* LNMaintableSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNMaintableSectionHeaderView.h; sourceTree = "<group>"; };
+		4C13D92C2176E13F001FEE00 /* LNMaintableSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNMaintableSectionHeaderView.m; sourceTree = "<group>"; };
 		4C653A0A20EF131700BDC52C /* LNZhiHuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNZhiHuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C653A1620EF131900BDC52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C653A1B20EF131900BDC52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +72,31 @@
 		4C653A4920EF492E00BDC52C /* UIView+LNExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LNExtension.h"; sourceTree = "<group>"; };
 		4C653A4A20EF492E00BDC52C /* UIView+LNExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LNExtension.m"; sourceTree = "<group>"; };
 		4C653A4D20EF4D4F00BDC52C /* UIHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIHeader.h; sourceTree = "<group>"; };
+		4CA0EF4C216B45DE0064DF17 /* UTilsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTilsHeader.h; sourceTree = "<group>"; };
+		4CA0EF4D216B47660064DF17 /* LNNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNNetworking.h; sourceTree = "<group>"; };
+		4CA0EF4E216B47660064DF17 /* LNNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNNetworking.m; sourceTree = "<group>"; };
+		4CA0EF54216B4FEE0064DF17 /* RVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMViewModel.h; sourceTree = "<group>"; };
+		4CA0EF55216B4FEF0064DF17 /* RVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMViewModel.m; sourceTree = "<group>"; };
+		4CA0EF57216B50350064DF17 /* LNBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseViewModel.h; sourceTree = "<group>"; };
+		4CA0EF58216B50350064DF17 /* LNBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewModel.m; sourceTree = "<group>"; };
+		4CA0EF5A216B50B30064DF17 /* LNMainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNMainViewModel.h; sourceTree = "<group>"; };
+		4CA0EF5B216B50B30064DF17 /* LNMainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNMainViewModel.m; sourceTree = "<group>"; };
+		4CA0EF5D216B569B0064DF17 /* LNBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseModel.h; sourceTree = "<group>"; };
+		4CA0EF5E216B569B0064DF17 /* LNBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseModel.m; sourceTree = "<group>"; };
+		4CA0EF61216B56AF0064DF17 /* LNStoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNStoryModel.h; sourceTree = "<group>"; };
+		4CA0EF62216B56AF0064DF17 /* LNStoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNStoryModel.m; sourceTree = "<group>"; };
+		4CC3A8DA216C4E8700FB9545 /* LNMainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNMainTableViewCell.h; sourceTree = "<group>"; };
+		4CC3A8DB216C4E8700FB9545 /* LNMainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNMainTableViewCell.m; sourceTree = "<group>"; };
+		4CC3A8DD216C56F600FB9545 /* ConstVariableHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstVariableHeader.h; sourceTree = "<group>"; };
+		4CFC0FD92179BA2300FB0172 /* LNStoryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNStoryDetailViewController.h; sourceTree = "<group>"; };
+		4CFC0FDA2179BA2300FB0172 /* LNStoryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNStoryDetailViewController.m; sourceTree = "<group>"; };
+		4CFC0FDC2179BC4C00FB0172 /* LNDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNDetailViewModel.h; sourceTree = "<group>"; };
+		4CFC0FDD2179BC4C00FB0172 /* LNDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNDetailViewModel.m; sourceTree = "<group>"; };
+		4CFC0FDF2179BF7F00FB0172 /* UrlHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlHeader.h; sourceTree = "<group>"; };
+		4CFC0FE02179C60A00FB0172 /* LNStoryDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNStoryDetailModel.h; sourceTree = "<group>"; };
+		4CFC0FE12179C60A00FB0172 /* LNStoryDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNStoryDetailModel.m; sourceTree = "<group>"; };
+		4CFC1B84216D8D3D009AE20B /* LNLoopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNLoopView.h; sourceTree = "<group>"; };
+		4CFC1B85216D8D3D009AE20B /* LNLoopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNLoopView.m; sourceTree = "<group>"; };
 		6D770593DBC8C8FA434FBAB7 /* Pods_LNZhiHuDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNZhiHuDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C77F9A4AFE8AA57DD1BC8C7 /* Pods-LNZhiHuDailyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDailyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDailyUITests/Pods-LNZhiHuDailyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8985A6A8E4DCAE78723321 /* Pods-LNZhiHuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNZhiHuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNZhiHuDaily/Pods-LNZhiHuDaily.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +134,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4C13D9272176DB80001FEE00 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4C13D9282176DB8F001FEE00 /* LNTools.h */,
+				4C13D9292176DB8F001FEE00 /* LNTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		4C653A0120EF131700BDC52C = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +166,7 @@
 		4C653A0C20EF131700BDC52C /* LNZhiHuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				4CA0EF52216B477C0064DF17 /* NetUtil */,
 				4C653A4C20EF4D3E00BDC52C /* Header */,
 				4C653A3F20EF39C300BDC52C /* Lib */,
 				4C653A3620EF1C9400BDC52C /* BaseClass */,
@@ -139,8 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				4C653A4520EF3B7300BDC52C /* AppDelegate */,
-				4C653A4420EF3B6400BDC52C /* View */,
 				4C653A4320EF3B5500BDC52C /* VewController */,
+				4C653A4420EF3B6400BDC52C /* View */,
+				4CA0EF53216B4F470064DF17 /* ViewModel */,
+				4CA0EF60216B569F0064DF17 /* Model */,
 			);
 			path = Enter;
 			sourceTree = "<group>";
@@ -148,8 +202,14 @@
 		4C653A3620EF1C9400BDC52C /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				4CA0EF54216B4FEE0064DF17 /* RVMViewModel.h */,
+				4CA0EF55216B4FEF0064DF17 /* RVMViewModel.m */,
 				4C653A3720EF1CB800BDC52C /* LNBaseViewController.h */,
 				4C653A3820EF1CB800BDC52C /* LNBaseViewController.m */,
+				4CA0EF57216B50350064DF17 /* LNBaseViewModel.h */,
+				4CA0EF58216B50350064DF17 /* LNBaseViewModel.m */,
+				4CA0EF5D216B569B0064DF17 /* LNBaseModel.h */,
+				4CA0EF5E216B569B0064DF17 /* LNBaseModel.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -157,10 +217,9 @@
 		4C653A3F20EF39C300BDC52C /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				4C653A4020EF3A2800BDC52C /* UIColor+LNExtension.h */,
-				4C653A4120EF3A2800BDC52C /* UIColor+LNExtension.m */,
-				4C653A4920EF492E00BDC52C /* UIView+LNExtension.h */,
-				4C653A4A20EF492E00BDC52C /* UIView+LNExtension.m */,
+				4C13D9272176DB80001FEE00 /* Tools */,
+				4CFC1B87216D8D43009AE20B /* Category */,
+				4CFC1B83216D8CD5009AE20B /* BannerView */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -170,6 +229,8 @@
 			children = (
 				4C653A3A20EF1CD200BDC52C /* LNMainViewController.h */,
 				4C653A3B20EF1CD200BDC52C /* LNMainViewController.m */,
+				4CFC0FD92179BA2300FB0172 /* LNStoryDetailViewController.h */,
+				4CFC0FDA2179BA2300FB0172 /* LNStoryDetailViewController.m */,
 				4C653A3D20EF1DDE00BDC52C /* Launch Screen.storyboard */,
 			);
 			path = VewController;
@@ -180,6 +241,10 @@
 			children = (
 				4C653A4620EF3B9600BDC52C /* LNMainNavigationBar.h */,
 				4C653A4720EF3B9600BDC52C /* LNMainNavigationBar.m */,
+				4CC3A8DA216C4E8700FB9545 /* LNMainTableViewCell.h */,
+				4CC3A8DB216C4E8700FB9545 /* LNMainTableViewCell.m */,
+				4C13D92B2176E13F001FEE00 /* LNMaintableSectionHeaderView.h */,
+				4C13D92C2176E13F001FEE00 /* LNMaintableSectionHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,8 +262,62 @@
 			isa = PBXGroup;
 			children = (
 				4C653A4D20EF4D4F00BDC52C /* UIHeader.h */,
+				4CA0EF4C216B45DE0064DF17 /* UTilsHeader.h */,
+				4CC3A8DD216C56F600FB9545 /* ConstVariableHeader.h */,
+				4CFC0FDF2179BF7F00FB0172 /* UrlHeader.h */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		4CA0EF52216B477C0064DF17 /* NetUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0EF4D216B47660064DF17 /* LNNetworking.h */,
+				4CA0EF4E216B47660064DF17 /* LNNetworking.m */,
+			);
+			path = NetUtil;
+			sourceTree = "<group>";
+		};
+		4CA0EF53216B4F470064DF17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0EF5A216B50B30064DF17 /* LNMainViewModel.h */,
+				4CA0EF5B216B50B30064DF17 /* LNMainViewModel.m */,
+				4CFC0FDC2179BC4C00FB0172 /* LNDetailViewModel.h */,
+				4CFC0FDD2179BC4C00FB0172 /* LNDetailViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4CA0EF60216B569F0064DF17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0EF61216B56AF0064DF17 /* LNStoryModel.h */,
+				4CA0EF62216B56AF0064DF17 /* LNStoryModel.m */,
+				4CFC0FE02179C60A00FB0172 /* LNStoryDetailModel.h */,
+				4CFC0FE12179C60A00FB0172 /* LNStoryDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CFC1B83216D8CD5009AE20B /* BannerView */ = {
+			isa = PBXGroup;
+			children = (
+				4CFC1B84216D8D3D009AE20B /* LNLoopView.h */,
+				4CFC1B85216D8D3D009AE20B /* LNLoopView.m */,
+			);
+			path = BannerView;
+			sourceTree = "<group>";
+		};
+		4CFC1B87216D8D43009AE20B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4C653A4020EF3A2800BDC52C /* UIColor+LNExtension.h */,
+				4C653A4120EF3A2800BDC52C /* UIColor+LNExtension.m */,
+				4C653A4920EF492E00BDC52C /* UIView+LNExtension.h */,
+				4C653A4A20EF492E00BDC52C /* UIView+LNExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		C99EFC27B72DE14A27FFE100 /* Frameworks */ = {
@@ -317,13 +436,23 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LNZhiHuDaily/Pods-LNZhiHuDaily-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking-RACExtensions/AFNetworking_RACExtensions.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking_RACExtensions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,12 +504,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C653A3520EF1C8200BDC52C /* AppDelegate.m in Sources */,
+				4CFC0FDE2179BC4C00FB0172 /* LNDetailViewModel.m in Sources */,
+				4CA0EF63216B56AF0064DF17 /* LNStoryModel.m in Sources */,
+				4CA0EF56216B4FEF0064DF17 /* RVMViewModel.m in Sources */,
 				4C653A3920EF1CB800BDC52C /* LNBaseViewController.m in Sources */,
+				4C13D92D2176E13F001FEE00 /* LNMaintableSectionHeaderView.m in Sources */,
+				4CFC0FE22179C60A00FB0172 /* LNStoryDetailModel.m in Sources */,
+				4CA0EF59216B50350064DF17 /* LNBaseViewModel.m in Sources */,
+				4CA0EF5C216B50B30064DF17 /* LNMainViewModel.m in Sources */,
 				4C653A4820EF3B9600BDC52C /* LNMainNavigationBar.m in Sources */,
+				4CFC1B86216D8D3D009AE20B /* LNLoopView.m in Sources */,
+				4CA0EF4F216B47660064DF17 /* LNNetworking.m in Sources */,
 				4C653A4220EF3A2800BDC52C /* UIColor+LNExtension.m in Sources */,
 				4C653A1D20EF131900BDC52C /* main.m in Sources */,
 				4C653A3C20EF1CD200BDC52C /* LNMainViewController.m in Sources */,
+				4CA0EF5F216B569B0064DF17 /* LNBaseModel.m in Sources */,
+				4CC3A8DC216C4E8700FB9545 /* LNMainTableViewCell.m in Sources */,
+				4CFC0FDB2179BA2300FB0172 /* LNStoryDetailViewController.m in Sources */,
 				4C653A4B20EF492E00BDC52C /* UIView+LNExtension.m in Sources */,
+				4C13D92A2176DB8F001FEE00 /* LNTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,10 +18,20 @@
     [super viewDidLoad];
     
     [self addViews];
+    
+    [self addViewConstraints];
 }
 
 - (void)addViews {
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     self.view.backgroundColor = [UIColor whiteColor];
+    if (@available(iOS 11, *)) {
+        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeNever;
+    }
+}
+
+- (void)addViewConstraints {
+    
 }
 
 @end
